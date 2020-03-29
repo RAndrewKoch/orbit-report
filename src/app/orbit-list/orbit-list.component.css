@@ -16,10 +16,23 @@ h3 {
 table {
   color: #111;
   border-radius: 5px;
+  border-collapse: collapse;
   overflow: hidden;
   margin: 12px 0;
   min-width: 300px;
   background: #dad8d8;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+#tableRows:nth-child(even){
+    background-color: rgb(106, 106, 240);
+}
+
+#tableRows:nth-child(odd){
+    background-color: rgb(178, 233, 157);
 }
 
 .header-row {
