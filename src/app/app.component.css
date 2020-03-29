@@ -11,3 +11,26 @@ button {
     font-size: 18px;
     cursor: pointer;
 }
+
+.upperBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+app-orbit-list {
+    grid-column: 1/5;
+}
+
+app-orbit-counts {
+    grid-column: 5/6;
+}
+
+.search-form {
+    padding:15px;
+    text-align: center;
+    margin: 0;
+}
+
+.searchBar {
+    background-color: #34495E;
+}
