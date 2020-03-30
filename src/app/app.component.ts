@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'orbit-report';
   sourceList: Satellite[];
   displayList: Satellite[];
-  typesList: [];
+  typesList: string[] = ['Space Debris', 'Communication', 'Probe', 'Positioning', 'Space Station', 'Telescope'];
 
   constructor() {
     this.displayList = [];
