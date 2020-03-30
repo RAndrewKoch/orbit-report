@@ -8,9 +8,9 @@ import { Satellite } from '../satellite';
 })
 export class OrbitListComponent implements OnInit {
   @Input() satellites: Satellite[];
-  
 
-  constructor() { 
+
+  constructor() {
 
   }
 
@@ -20,8 +20,9 @@ export class OrbitListComponent implements OnInit {
   sort(column: string): void {
     console.log ('sort fired');
     // array.sort modifies the array, sorting the items based on the given compare function
+    // tslint:disable-next-line: only-arrow-functions
     this.satellites.sort(function(a: Satellite, b: Satellite): number {
-       if(a[column] < b[column]) {
+       if (a[column] < b[column]) {
           return -1;
        } else if (a[column] > b[column]) {
           return 1;
